@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Arkadeep Das, Manas Daruka, Ayush Sharma, Abhinav Gupta
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \projectandworkexperience{#3}{#1} & \footnotesize{\textit{#4}}\\
+        \footnotesize{\textit{#2}}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Daniel Foster} % Your Name
+\newcommand{\course}{M.A.Sc. Candidate in Aerospace Engineering} % Your Course
+\newcommand{\phone}{+1 (519) 902-7043} % Your Phone Number
+\newcommand{\email}{d.foster@mail.utoronto.ca} %Email 1
+\newcommand{\linkedin}{@dnfost} %linkedin
+
+% Define command for social media links
+\newcommand{\sociallink}[2]{%
+    \href{#1}{\textcolor{black}{#2}}%
+}
+
+\newcommand{\projectandworkexperience}[2]{%
+    \textbf{\href{#1}{\textbf{#2}}}
+}
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+% \includegraphics[width=2cm,clip]{logo.png}
+
+} \parbox{\dimexpr\linewidth\relax}{
+    \begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} \\
+  {\href{https://www.linkedin.com/in/dnfost/}{LinkedIn} | Canada \& EU Citizen | Bilingual (English \& French) | UK Visa}\\
+\end{tabularx}
+\vspace{0.2cm}
+}
+
+\small
+
+\section{Summary}
+\begin{itemize}
+    \itemsep0em 
+    \item Master of Applied Science candidate in Aerospace Engineering, thesis in collaboration with Bombardier
+    \item Industry experience in CFD at Pratt \& Whitney Canada, undergraduate thesis in CFD code development 
+    \item Strong communication skills, fully bilingual in English and French
+\end{itemize}
+
+\section{Education}
+
+    \textbf{Master of Applied Science in Aerospace Engineering}
+    \hfill
+    University of Toronto \\
+    GPA: 4.0/4.0
+    \hfill 
+    2024 - 2026 (August) \\
+    \textit{Thesis}: Noise Generation Mechanisms of Slat Tracks and Their Mitigation -- in collaboration with Bombardier Inc.
+    \textbf{Herbert Spencer Ribner Memorial Scholarship (2024)} \\
+    Relevant coursework: Advanced Flight Dynamics (A), Fundamentals of CFD (A+), Special Topics in CFD (A+)
+
+    \vspace{\baselineskip}
+
+    \textbf{Bachelor of Applied Science in Engineering Science (Honours), Aerospace Engineering}
+    \hfill
+    University of Toronto \\ 
+    GPA: 3.6/4.0
+    \hfill 
+    2019 - 2024 \\
+    \textit{Thesis}: Dissipation-Based Homotopy Continuation Methods for Steady Aerodynamic Flows \\
+    Relevant coursework: Aerodynamics (A+), Computational Structural Mechanics \& Design Optimization (A)
+
+\section{Projects}
+
+    \textbf{CFD Solver Development} \\
+    \textit{Numerical Methods for Convergence Acceleration of Aerodynamic Flow Simulations}
+    \begin{itemize}
+        \itemsep0em
+        \item Developed and implemented a homotopy continuation method within research CFD code to improve robustness of steady compressible Navier-Stokes simulations
+        \item Investigated nonlinear solver behaviour, Newton-Krylov-Schwarz methods, convergence acceleration techniques, and numerical continuation strategies
+        \item Modified a large-scale C++ CFD codebase and executed verification studies using HPC resources
+        \item Evaluated solver performance against existing continuation methods and assessed impacts on convergence
+    \end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+
+    \textbf{University of Toronto Institute for Aerospace Studies}
+    \hfill
+    North York, ON, Canada \\
+    \textit{Experimental Fluid Dynamics -- Graduate Researcher}
+    \hfill
+    Sep. 2024 - Present
+    \begin{itemize}
+        \itemsep0em
+        \item Led wind-tunnel test programs for experimental quantification of aerodynamic noise generated by high-lift slat systems, in collaboration with Bombardier
+        \item Programmed automated data analysis tools and scripts using Python and MATLAB
+        \item Coordinated experimental hardware, setup activities, and test execution with engineering stakeholders to translate technical requirements into robust test programs
+        \item Presented reports and communicated results to Acoustics \& Vibration engineering stakeholders at Bombardier
+    \end{itemize}
+
+    \textbf{Pratt \& Whitney Canada}
+    \hfill
+    Mississauga, ON, Canada \\
+    \textit{Compressor Aerodynamics -- CFD Integrator (Aerothermal Fluids Co-op Student)}
+    \hfill
+    May 2022 - Sep. 2023
+    \begin{itemize}
+        \itemsep0em
+        \item Led CFD performance benchmarking studies on computational aircraft engine models, in support of in-house methods and tools development within Compressor Aerodynamics 
+        \item Generated aerodynamic solutions using CFD software to produce estimates of pressure distributions and aerodynamic loads, validating results with experimental data 
+        \item Developed complex CFD workflows for aircraft engine designs from meshing to post-processing, contributing to development of in-house CFD tools and validating new CFD capabilities
+        \item Presented reports and communicated results to Compressor Aerodynamics engineering stakeholders at Pratt \& Whitney Canada
+    \end{itemize}
+
+\section{Skills}
+    \textbf{CFD}: Finite-difference \& finite-volume algorithms, multigrid, high-resolution schemes, ANSYS, STAR-CCM+ \\
+    \textbf{Programming}: Python, C++, MATLAB, UNIX/LINUX environments, HPC best practices \\
+    \textbf{Testing}: CAD (SOLIDWORKS), wind tunnel testing \\
+    \textbf{Languages}: English (native language), French (professional working proficiency -- DELF B2)
+
+%-------------------------------------------
+\end{document}
