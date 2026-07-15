@@ -324,3 +324,7 @@ h3 {
     padding: 4rem 1.25rem;
   }
 }
+
+a {
+  text-decoration: none;
+}
